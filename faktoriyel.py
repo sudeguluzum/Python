@@ -20,3 +20,16 @@ def faktoriyel(sayi): #faktoriyel adında bir fonskiyon tanımlıyoruz ve sayi a
 sayi=int(input("Bir sayı giriniz: "))
 print(faktoriyel(sayi))
     
+
+
+#FAKTÖRİYEL FONKSİYONU TANIMLAMA
+def faktoriyel(number):
+    if(number>0):
+        sayac=1
+        for i in range(1,number+1):
+            sayac=sayac*i
+        return sayac
+    else:
+        return "Negatif sayıların faktöriyeli olmaz"
+sayi=int(input("Bir sayı giriniz: "))
+print(faktoriyel(sayi))
